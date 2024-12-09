@@ -17,18 +17,6 @@ class Node:
         else:
             self.left.putNumbers(newNum)
             self.right.putNumbers(newNum)
-    def PrintTree(self):
-        if self.left:
-            self.left.PrintTree()
-        print(self.data),
-        if self.right:
-            self.right.PrintTree()
-    def PrintLeaves(self):
-        if(self.left is None or self.right is None): 
-            print(self.data)
-        else:
-            self.left.PrintLeaves()
-            self.right.PrintLeaves()
     def getLeafs(self):
         leafs = []
         def _getLeafs(node:Node):
