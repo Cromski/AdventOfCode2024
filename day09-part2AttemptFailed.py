@@ -1,4 +1,12 @@
-
+"""
+all of these were too high:
+15858929020152
+15847586027008
+15847586027008
+15847591904887
+15858929020152
+15858929020152
+"""
 
 with open("day09-data.txt", 'r') as file:
     rows = file.readline().strip()
