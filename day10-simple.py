@@ -1,14 +1,13 @@
 with open("day10-data.txt", 'r') as file:
     rows = [list(map(int,row.strip())) for row in file.readlines()]
 
-countPt1 = 0
-countPt2 = 0
+countPt1, countPt2 = 0, 0
 
 ############# PART 1 & 2 #############
 def theAlg(y,x,prevNum, knownLocations):
     global countPt1, countPt2
     try:
-        if x < 0 or y < 0 or x >= len(rows[y]) or y >= len(rows): return 0
+        if x < 0 or y < 0 or x >= len(rows[y]) or y >= len(rows): return 
     except:
         return 
     
