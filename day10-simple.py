@@ -6,10 +6,8 @@ countPt1, countPt2 = 0, 0
 ############# PART 1 & 2 #############
 def theAlg(y,x,prevNum, knownLocations):
     global countPt1, countPt2
-    try:
-        if x < 0 or y < 0 or x >= len(rows[y]) or y >= len(rows): return 
-    except:
-        return 
+    
+    if x < 0 or y < 0 or x >= len(rows[0]) or y >= len(rows): return 
     
     if prevNum != rows[y][x]-1: return 
     
