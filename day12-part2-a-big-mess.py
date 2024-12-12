@@ -1,3 +1,22 @@
+
+"""
+some notes:
+AAAA -> 3, 2-2, 2-2, 3-2
+  v
+EEE		
+E	  -> edges: 0,1, -1,-1, -1,-1, 1,0 -> 0,2, -1,-1, 2,2, -1,-1 -> 0,3, 1,4, 2,3 -> 2,2, 3,1, 2,0
+          -> normal: 2       -> 2 	 -> 3		  -> 3
+
+input: (0,1, 1,0 -> 0,2, 2,2 -> 0,3, 1,4, 2,3 -> 2,2, 3,1, 2,0
+
+
+
+EEE corners[(0,0), (0,2), (2,2), (2,0)]  
+E		1,2 when x == newY update så: corners[(0,0), (0,3), (2,3), (2,0)]
+		2,1 when newY == y update så: corners[(0,0), (0,3), (3,3), (3,0)]
+
+"""
+
 from collections import defaultdict
 import time
 
